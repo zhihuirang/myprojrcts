@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSDN个人主页</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- 引入字体图标（模拟CSDN图标） -->
+    <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- 顶部导航栏 -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <img src="images/csdn_logo.png" alt="CSDN logo">
+            </div>
+            <div class="search-box">
+                <input type="text" placeholder="搜索文章、博主、技术话题">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            <div class="header-nav">
+                <a href="#">首页</a>
+                <a href="#">博客</a>
+                <a href="#">学习</a>
+                <a href="#">社区</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 个人主页主体 -->
+    <main class="main-container">
+        <!-- 左侧个人信息栏 -->
+        <aside class="left-sidebar">
+            <div class="avatar-card">
+                <img src="images/avatar.jpg" alt="个人头像" class="avatar">
+                <h2 class="username">前端开发笔记</h2>
+                <p class="desc">专注前端开发 | HTML/CSS/JS | 框架学习</p>
+                <div class="stats">
+                    <span>文章 28</span>
+                    <span>粉丝 126</span>
+                    <span>获赞 358</span>
+                </div>
+            </div>
+            <div class="nav-card">
+                <ul>
+                    <li><a href="#"><i class="fas fa-file-alt"></i> 我的文章</a></li>
+                    <li><a href="#"><i class="fas fa-star"></i> 我的收藏</a></li>
+                    <li><a href="#"><i class="fas fa-comment"></i> 我的评论</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- 右侧内容区 -->
+        <section class="content-area">
+            <div class="content-header">
+                <h1>我的文章</h1>
+            </div>
+            <div class="article-list">
+                <!-- 文章项（点击标题跳转至article.html） -->
+                <div class="article-item">
+                    <h3 class="article-title">
+                        <a href="article.html">CSS实现CSDN个人主页布局还原教程</a>
+                    </h3>
+                    <div class="article-meta">
+                        <span>发布于 2025-12-10</span>
+                        <span>阅读 1289</span>
+                        <span>评论 18</span>
+                        <span>点赞 68</span>
+                    </div>
+                    <p class="article-desc">本文详细讲解如何使用HTML和CSS还原CSDN个人主页的布局，包括导航栏、侧边栏、文章列表等核心模块的实现思路和代码示例...</p>
+                </div>
+                <div class="article-item">
+                    <h3 class="article-title">
+                        <a href="article.html">Netlify静态托管部署教程</a>
+                    </h3>
+                    <div class="article-meta">
+                        <span>发布于 2025-12-08</span>
+                        <span>阅读 956</span>
+                        <span>评论 12</span>
+                        <span>点赞 45</span>
+                    </div>
+                    <p class="article-desc">Netlify是一款免费的静态网站托管平台，本文手把手教你如何将本地的HTML/CSS项目部署到Netlify，实现公网访问...</p>
+                </div>
+                <div class="article-item">
+                    <h3 class="article-title">
+                        <a href="article.html">HTML5新特性详解与实战</a>
+                    </h3>
+                    <div class="article-meta">
+                        <span>发布于 2025-12-05</span>
+                        <span>阅读 1560</span>
+                        <span>评论 24</span>
+                        <span>点赞 89</span>
+                    </div>
+                    <p class="article-desc">HTML5作为新一代的HTML标准，新增了大量语义化标签、表单控件和API，本文结合实战案例讲解这些新特性的使用场景和技巧...</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 底部 -->
+    <footer class="footer">
+        <div class="footer-container">
+            <p>© 2025 前端开发笔记 - CSDN个人主页 模拟版</p>
+        </div>
+    </footer>
+</body>
+</html>
