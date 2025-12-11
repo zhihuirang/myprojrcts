@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS实现CSDN个人主页布局还原教程 - CSDN博客</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- 顶部导航栏（与主页一致） -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <img src="images/csdn_logo.png" alt="CSDN logo">
+            </div>
+            <div class="search-box">
+                <input type="text" placeholder="搜索文章、博主、技术话题">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            <div class="header-nav">
+                <a href="#">首页</a>
+                <a href="#">博客</a>
+                <a href="#">学习</a>
+                <a href="#">社区</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 文章详情主体 -->
+    <main class="article-main">
+        <!-- 左侧文章内容 -->
+        <section class="article-content">
+            <h1 class="article-title">CSS实现CSDN个人主页布局还原教程</h1>
+            <div class="article-meta">
+                <span>发布于 2025-12-10</span>
+                <span>作者：前端开发笔记</span>
+                <span>阅读 1289</span>
+                <span>评论 18</span>
+                <span>点赞 68</span>
+            </div>
+            <div class="article-body">
+                <h2>一、布局分析</h2>
+                <p>CSDN个人主页主要分为三个核心区域：</p>
+                <ol>
+                    <li>顶部导航栏：包含logo、搜索框、导航菜单</li>
+                    <li>主体区域：左侧个人信息侧边栏 + 右侧文章列表/详情</li>
+                    <li>底部版权信息栏</li>
+                </ol>
+                <h2>二、核心CSS技巧</h2>
+                <h3>1. 弹性布局（Flex）</h3>
+                <p>使用display: flex实现导航栏和主体区域的横向布局，示例代码：</p>
+                <pre>
+.main-container {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+}
+                </pre>
+                <h3>2. 间距与配色还原</h3>
+                <p>CSDN主色调为橙色（#f56c6c）、灰色系，间距主要使用20px、16px等，需严格匹配视觉效果。</p>
+                <h2>三、注意事项</h2>
+                <p>1. 图片路径需使用相对路径，确保部署后能正常加载；</p>
+                <p>2. 适配移动端可添加媒体查询，本文暂聚焦PC端还原；</p>
+                <p>3. 跳转链接需使用相对路径，确保多页跳转正常。</p>
+            </div>
+            <div class="article-footer">
+                <div class="like-share">
+                    <button><i class="fas fa-thumbs-up"></i> 点赞</button>
+                    <button><i class="fas fa-share-alt"></i> 分享</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 右侧侧边栏（个人信息） -->
+        <aside class="article-sidebar">
+            <div class="avatar-card">
+                <img src="images/avatar.jpg" alt="个人头像" class="avatar">
+                <h2 class="username">前端开发笔记</h2>
+                <p class="desc">专注前端开发 | HTML/CSS/JS | 框架学习</p>
+                <button class="follow-btn">关注</button>
+            </div>
+            <div class="hot-article">
+                <h3>热门文章</h3>
+                <ul>
+                    <li><a href="article.html">Netlify静态托管部署教程</a></li>
+                    <li><a href="article.html">HTML5新特性详解与实战</a></li>
+                    <li><a href="article.html">JavaScript异步编程全解析</a></li>
+                </ul>
+            </div>
+        </aside>
+    </main>
+
+    <!-- 底部 -->
+    <footer class="footer">
+        <div class="footer-container">
+            <p>© 2025 前端开发笔记 - CSDN个人主页 模拟版</p>
+        </div>
+    </footer>
+</body>
+</html>
